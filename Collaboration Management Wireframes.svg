@@ -1,0 +1,189 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 800">
+  <!-- Background -->
+  <rect width="1000" height="800" fill="#F9FAFB"/>
+  
+  <!-- Title -->
+  <text x="500" y="50" font-family="Arial" font-size="24" text-anchor="middle" fill="#1F2937">LetsJam Collaboration Management Screens</text>
+  
+  <!-- Screen 1: Collaborators List -->
+  <g transform="translate(120, 100)">
+    <!-- Phone frame -->
+    <rect x="0" y="0" width="320" height="580" rx="20" fill="white" stroke="#1F2937" stroke-width="2"/>
+    <text x="160" y="30" font-family="Arial" font-size="18" text-anchor="middle" fill="#1F2937">Collaborators</text>
+    
+    <!-- Status bar -->
+    <rect x="0" y="50" width="320" height="30" fill="#F3F4F6"/>
+    
+    <!-- Header -->
+    <rect x="0" y="50" width="320" height="60" rx="0" fill="#3B82F6"/>
+    <text x="160" y="85" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle" fill="white">Manage Collaborators</text>
+    <circle cx="30" cy="80" r="15" fill="white" opacity="0.8"/>
+    <text x="30" y="85" font-family="Arial" font-size="16" text-anchor="middle" fill="#3B82F6">←</text>
+    
+    <!-- Playlist info -->
+    <rect x="30" y="130" width="70" height="70" fill="#3B82F6" rx="5"/>
+    <text x="120" y="150" font-family="Arial" font-size="16" font-weight="bold" fill="#1F2937">Weekend Vibes</text>
+    <text x="120" y="170" font-family="Arial" font-size="12" fill="#6B7280">12 songs • 45 min</text>
+    
+    <!-- Invite link -->
+    <text x="30" y="220" font-family="Arial" font-size="16" fill="#1F2937">Invite Link</text>
+    <rect x="30" y="230" width="200" height="40" rx="5" fill="white" stroke="#D1D5DB" stroke-width="1"/>
+    <text x="40" y="255" font-family="Arial" font-size="12" fill="#6B7280">letsjam.app/join/abc123</text>
+    <rect x="240" y="230" width="50" height="40" rx="5" fill="#3B82F6"/>
+    <text x="265" y="255" font-family="Arial" font-size="14" text-anchor="middle" fill="white">Copy</text>
+    
+    <!-- Current collaborators -->
+    <text x="30" y="300" font-family="Arial" font-size="16" fill="#1F2937">Current Collaborators</text>
+    
+    <rect x="30" y="310" width="260" height="70" rx="5" fill="white" stroke="#D1D5DB" stroke-width="1"/>
+    <circle cx="65" cy="345" r="20" fill="#3B82F6"/>
+    <text x="65" y="350" font-family="Arial" font-size="16" text-anchor="middle" fill="white">U</text>
+    <text x="130" y="335" font-family="Arial" font-size="14" fill="#1F2937">You</text>
+    <text x="130" y="355" font-family="Arial" font-size="12" fill="#6B7280">Admin</text>
+    
+    <rect x="30" y="390" width="260" height="70" rx="5" fill="white" stroke="#D1D5DB" stroke-width="1"/>
+    <circle cx="65" cy="425" r="20" fill="#1E40AF"/>
+    <text x="65" y="430" font-family="Arial" font-size="16" text-anchor="middle" fill="white">J</text>
+    <text x="130" y="415" font-family="Arial" font-size="14" fill="#1F2937">Jane Smith</text>
+    <text x="130" y="435" font-family="Arial" font-size="12" fill="#6B7280">Editor</text>
+    <rect x="220" y="415" width="50" height="20" rx="10" fill="white" stroke="#6B7280" stroke-width="1"/>
+    <text x="245" y="428" font-family="Arial" font-size="12" text-anchor="middle" fill="#6B7280">Edit</text>
+    
+    <rect x="30" y="470" width="260" height="70" rx="5" fill="white" stroke="#D1D5DB" stroke-width="1"/>
+    <circle cx="65" cy="505" r="20" fill="#DBEAFE"/>
+    <text x="65" y="510" font-family="Arial" font-size="16" text-anchor="middle" fill="#3B82F6">S</text>
+    <text x="130" y="495" font-family="Arial" font-size="14" fill="#1F2937">Sam Johnson</text>
+    <text x="130" y="515" font-family="Arial" font-size="12" fill="#6B7280">Viewer</text>
+    <rect x="220" y="495" width="50" height="20" rx="10" fill="white" stroke="#6B7280" stroke-width="1"/>
+    <text x="245" y="508" font-family="Arial" font-size="12" text-anchor="middle" fill="#6B7280">Edit</text>
+    
+    <!-- Add collaborator button -->
+    <rect x="30" y="550" width="260" height="40" rx="5" fill="#DBEAFE" stroke="#3B82F6" stroke-width="1" stroke-dasharray="4"/>
+    <text x="160" y="575" font-family="Arial" font-size="14" text-anchor="middle" fill="#3B82F6">+ Add New Collaborator</text>
+  </g>
+  
+  <!-- Screen 2: Add Collaborator -->
+  <g transform="translate(540, 100)">
+    <!-- Phone frame -->
+    <rect x="0" y="0" width="320" height="580" rx="20" fill="white" stroke="#1F2937" stroke-width="2"/>
+    <text x="160" y="30" font-family="Arial" font-size="18" text-anchor="middle" fill="#1F2937">Add Collaborator</text>
+    
+    <!-- Status bar -->
+    <rect x="0" y="50" width="320" height="30" fill="#F3F4F6"/>
+    
+    <!-- Header -->
+    <rect x="0" y="50" width="320" height="60" rx="0" fill="#3B82F6"/>
+    <text x="160" y="85" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle" fill="white">Add Collaborator</text>
+    <circle cx="30" cy="80" r="15" fill="white" opacity="0.8"/>
+    <text x="30" y="85" font-family="Arial" font-size="16" text-anchor="middle" fill="#3B82F6">←</text>
+    
+    <!-- Content -->
+    <text x="30" y="140" font-family="Arial" font-size="16" fill="#1F2937">Email Address</text>
+    <rect x="30" y="150" width="260" height="50" rx="8" fill="white" stroke="#D1D5DB" stroke-width="1"/>
+    <text x="45" y="180" font-family="Arial" font-size="14" fill="#9CA3AF">Enter email address...</text>
+    
+    <text x="30" y="230" font-family="Arial" font-size="16" fill="#1F2937">Permission Level</text>
+    
+    <rect x="30" y="250" width="260" height="70" rx="8" fill="white" stroke="#D1D5DB" stroke-width="1"/>
+    <circle cx="50" cy="285" r="12" fill="#3B82F6"/>
+    <circle cx="50" cy="285" r="6" fill="white"/>
+    <text x="70" y="275" font-family="Arial" font-size="16" fill="#1F2937">Admin</text>
+    <text x="70" y="295" font-family="Arial" font-size="12" fill="#6B7280">Can edit playlist and manage collaborators</text>
+    
+    <rect x="30" y="330" width="260" height="70" rx="8" fill="white" stroke="#D1D5DB" stroke-width="1"/>
+    <circle cx="50" cy="365" r="12" fill="white" stroke="#D1D5DB" stroke-width="1"/>
+    <text x="70" y="355" font-family="Arial" font-size="16" fill="#1F2937">Editor</text>
+    <text x="70" y="375" font-family="Arial" font-size="12" fill="#6B7280">Can add and remove songs</text>
+    
+    <rect x="30" y="410" width="260" height="70" rx="8" fill="white" stroke="#D1D5DB" stroke-width="1"/>
+    <circle cx="50" cy="445" r="12" fill="white" stroke="#D1D5DB" stroke-width="1"/>
+    <text x="70" y="435" font-family="Arial" font-size="16" fill="#1F2937">Viewer</text>
+    <text x="70" y="455" font-family="Arial" font-size="12" fill="#6B7280">Can only view the playlist</text>
+    
+    <!-- Add collaborator button -->
+    <rect x="30" y="510" width="260" height="50" rx="8" fill="#3B82F6"/>
+    <text x="160" y="540" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="white">Send Invitation</text>
+  </g>
+  
+  <!-- Screen 3: Edit Collaborator -->
+  <g transform="translate(120, 720)">
+    <!-- Phone frame -->
+    <rect x="0" y="0" width="320" height="580" rx="20" fill="white" stroke="#1F2937" stroke-width="2"/>
+    <text x="160" y="30" font-family="Arial" font-size="18" text-anchor="middle" fill="#1F2937">Edit Collaborator</text>
+    
+    <!-- Status bar -->
+    <rect x="0" y="50" width="320" height="30" fill="#F3F4F6"/>
+    
+    <!-- Header -->
+    <rect x="0" y="50" width="320" height="60" rx="0" fill="#3B82F6"/>
+    <text x="160" y="85" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle" fill="white">Edit Collaborator</text>
+    <circle cx="30" cy="80" r="15" fill="white" opacity="0.8"/>
+    <text x="30" y="85" font-family="Arial" font-size="16" text-anchor="middle" fill="#3B82F6">←</text>
+    
+    <!-- Collaborator info -->
+    <circle cx="160" cy="150" r="40" fill="#1E40AF"/>
+    <text x="160" y="160" font-family="Arial" font-size="28" text-anchor="middle" fill="white">J</text>
+    <text x="160" y="210" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle" fill="#1F2937">Jane Smith</text>
+    <text x="160" y="230" font-family="Arial" font-size="14" text-anchor="middle" fill="#6B7280">jane@example.com</text>
+    
+    <text x="30" y="270" font-family="Arial" font-size="16" fill="#1F2937">Permission Level</text>
+    
+    <rect x="30" y="290" width="260" height="70" rx="8" fill="white" stroke="#D1D5DB" stroke-width="1"/>
+    <circle cx="50" cy="325" r="12" fill="white" stroke="#D1D5DB" stroke-width="1"/>
+    <text x="70" y="315" font-family="Arial" font-size="16" fill="#1F2937">Admin</text>
+    <text x="70" y="335" font-family="Arial" font-size="12" fill="#6B7280">Can edit playlist and manage collaborators</text>
+    
+    <rect x="30" y="370" width="260" height="70" rx="8" fill="white" stroke="#3B82F6" stroke-width="2"/>
+    <circle cx="50" cy="405" r="12" fill="#3B82F6"/>
+    <circle cx="50" cy="405" r="6" fill="white"/>
+    <text x="70" y="395" font-family="Arial" font-size="16" fill="#1F2937">Editor</text>
+    <text x="70" y="415" font-family="Arial" font-size="12" fill="#6B7280">Can add and remove songs</text>
+    
+    <rect x="30" y="450" width="260" height="70" rx="8" fill="white" stroke="#D1D5DB" stroke-width="1"/>
+    <circle cx="50" cy="485" r="12" fill="white" stroke="#D1D5DB" stroke-width="1"/>
+    <text x="70" y="475" font-family="Arial" font-size="16" fill="#1F2937">Viewer</text>
+    <text x="70" y="495" font-family="Arial" font-size="12" fill="#6B7280">Can only view the playlist</text>
+    
+    <!-- Actions -->
+    <rect x="30" y="540" width="120" height="50" rx="8" fill="#3B82F6"/>
+    <text x="90" y="570" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="white">Save</text>
+    
+    <rect x="170" y="540" width="120" height="50" rx="8" fill="white" stroke="#EF4444" stroke-width="1"/>
+    <text x="230" y="570" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="#EF4444">Remove</text>
+  </g>
+  
+  <!-- Screen 4: Invitation Sent -->
+  <g transform="translate(540, 720)">
+    <!-- Phone frame -->
+    <rect x="0" y="0" width="320" height="580" rx="20" fill="white" stroke="#1F2937" stroke-width="2"/>
+    <text x="160" y="30" font-family="Arial" font-size="18" text-anchor="middle" fill="#1F2937">Invitation Sent</text>
+    
+    <!-- Status bar -->
+    <rect x="0" y="50" width="320" height="30" fill="#F3F4F6"/>
+    
+    <!-- Header -->
+    <rect x="0" y="50" width="320" height="60" rx="0" fill="#3B82F6"/>
+    <text x="160" y="85" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle" fill="white">Invitation</text>
+    <circle cx="30" cy="80" r="15" fill="white" opacity="0.8"/>
+    <text x="30" y="85" font-family="Arial" font-size="16" text-anchor="middle" fill="#3B82F6">←</text>
+    
+    <!-- Success confirmation -->
+    <circle cx="160" cy="200" r="60" fill="#DBEAFE" stroke="#3B82F6" stroke-width="2"/>
+    <text x="160" y="215" font-family="Arial" font-size="50" font-weight="bold" text-anchor="middle" fill="#3B82F6">✓</text>
+    
+    <text x="160" y="300" font-family="Arial" font-size="22" font-weight="bold" text-anchor="middle" fill="#1F2937">Invitation Sent!</text>
+    <text x="160" y="330" font-family="Arial" font-size="14" text-anchor="middle" fill="#6B7280">An email has been sent to:</text>
+    <text x="160" y="355" font-family="Arial" font-size="16" text-anchor="middle" fill="#1F2937">friend@example.com</text>
+    
+    <rect x="60" y="390" width="200" height="60" rx="5" fill="white" stroke="#D1D5DB" stroke-width="1"/>
+    <text x="160" y="420" font-family="Arial" font-size="14" text-anchor="middle" fill="#6B7280">Pending acceptance</text>
+    <circle cx="80" cy="420" r="15" fill="#FEF3C7"/>
+    <text x="80" y="425" font-family="Arial" font-size="14" text-anchor="middle" fill="#D97706">!</text>
+    
+    <text x="160" y="480" font-family="Arial" font-size="14" text-anchor="middle" fill="#6B7280">They'll receive access once they accept.</text>
+    
+    <!-- Actions -->
+    <rect x="60" y="510" width="200" height="50" rx="8" fill="#3B82F6"/>
+    <text x="160" y="540" font-family="Arial" font-size="16" font-weight="bold" text-anchor="middle" fill="white">Done</text>
+  </g>
+</svg>
