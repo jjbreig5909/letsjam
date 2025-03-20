@@ -1,0 +1,46 @@
+.splash-screen {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #3B82F6 0%, #1E40AF 100%);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.splash-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-circle {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.logo-text {
+  color: #3B82F6;
+  font-size: 70px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.app-name {
+  font-size: 40px;
+  margin: 0 0 10px 0;
+}
+
+.tagline {
+  font-size: 18px;
+  opacity: 0.9;
+  margin: 0;
+} 
