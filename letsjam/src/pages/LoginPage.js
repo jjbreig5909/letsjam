@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { login } from '../firebase/auth';
 import '../styles/AuthPages.css';
 
 const LoginPage = () => {
   const navigate = useNavigate();
+  const location = useLocation();
   const [formData, setFormData] = useState({
     email: '',
     password: ''
@@ -41,7 +42,9 @@ const LoginPage = () => {
     try {
       await login(formData.email, formData.password);
       // Login successful
-      navigate('/home'); // Redirect to home page after successful login
+      // Redirect to the page user tried to visit or home
+      const from = location.state?.from?.pathname || '/home';
+      navigate(from, { replace: true });
     } catch (error) {
       let errorMessage = 'An error occurred during login';
       if (error.code === 'auth/user-not-found') {
