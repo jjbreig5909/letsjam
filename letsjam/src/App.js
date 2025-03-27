@@ -10,6 +10,7 @@ import HomePage from './pages/HomePage';
 import PlaylistDetailPage from './pages/PlaylistDetailPage';
 import CollaboratorsPage from './pages/CollaboratorsPage';
 import CreatePlaylistPage from './pages/CreatePlaylistPage';
+import ProfilePage from './pages/ProfilePage';
 
 // Import components
 import ProtectedRoute from './components/ProtectedRoute';
@@ -78,6 +79,14 @@ function AppRoutes() {
         element={
           <ProtectedRoute>
             <CreatePlaylistPage />
+          </ProtectedRoute>
+        } 
+      />
+      <Route 
+        path="/profile" 
+        element={
+          <ProtectedRoute>
+            <ProfilePage />
           </ProtectedRoute>
         } 
       />
