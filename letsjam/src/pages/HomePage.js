@@ -1,8 +1,13 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { useAuth } from '../contexts/AuthContext';
+import { logout } from '../firebase/auth';
 import '../styles/HomePage.css';
 
 const HomePage = () => {
+  const navigate = useNavigate();
+  const { user, setUser } = useAuth();
+  
   // Mock data for UI demonstration
   const mockPlaylists = [
     { id: 1, name: 'Weekend Vibes', songs: 12, duration: '45 min' },
@@ -10,12 +15,27 @@ const HomePage = () => {
     { id: 3, name: 'Chill Evening', songs: 15, duration: '58 min' }
   ];
 
+  const handleLogout = async () => {
+    try {
+      await logout();
+      setUser(null); // Update the auth context
+      navigate('/login'); // Redirect to login page
+    } catch (error) {
+      console.error('Logout failed:', error);
+    }
+  };
+
   return (
     <div className="home-page">
       <header className="app-header">
         <h1 className="app-title">LetsJam</h1>
-        <div className="user-avatar">
-          <Link to="/profile">U</Link>
+        <div className="header-right">
+          <div className="user-avatar">
+            <Link to="/profile">{user?.email?.[0].toUpperCase() || 'U'}</Link>
+          </div>
+          <button onClick={handleLogout} className="logout-button">
+            Logout
+          </button>
         </div>
       </header>
 

@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { login } from '../firebase/auth';
+import { useAuth } from '../contexts/AuthContext';
 import '../styles/AuthPages.css';
 
 const LoginPage = () => {
   const navigate = useNavigate();
   const location = useLocation();
+  const { setUser } = useAuth();
   const [formData, setFormData] = useState({
     email: '',
     password: ''
@@ -40,7 +42,9 @@ const LoginPage = () => {
     }
 
     try {
-      await login(formData.email, formData.password);
+      const user = await login(formData.email, formData.password);
+      setUser(user); // Update the auth context with the logged-in user
+      
       // Login successful
       // Redirect to the page user tried to visit or home
       const from = location.state?.from?.pathname || '/home';
